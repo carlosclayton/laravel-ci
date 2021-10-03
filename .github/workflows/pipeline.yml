@@ -26,6 +26,6 @@ jobs:
     - name: Directory Permissions
       run: chmod -R 777 storage bootstrap/cache
     - name: PHP Insights Code Quality
-      run: php artisan insights --no-interaction --min-quality=90 --min-complexity=95 --min-architecture=80 --min-style=90 -n --ansi --format=github-action
+      run: php artisan insights --no-interaction --min-quality=93 --min-complexity=86 --min-architecture=95 --min-style=96 -n --ansi --format=github-action
     - name: Execute tests (Unit and Feature tests) via PHPUnit
       run: vendor/bin/phpunit --coverage-text
